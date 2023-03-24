@@ -19,28 +19,31 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area">
         interaja
     </div>
 
-
     <script>
-         var area = window.document.getElementById('area')
-        
-         function clicar() {
+        var area = window.document.getElementById('area')
+       area.addEventListener('click', clicar)
+       area.addEventListener('mouseenter', entrar)
+       area.addEventListener('mouseout', sair)
+
+       function clicar() {
            
-            area.innerText = 'clicou!'
-            area.style.backgroundColor = 'pink'
-        }
+           area.innerText = 'clicou!'
+           area.style.backgroundColor = 'pink'
+       }
 
-        function entrar() {
-            area.innerText = 'entrou!'
-        }
+       function entrar() {
+           area.innerText = 'entrou!'
+       }
 
-        function sair() {
-            area.innerText = 'saiu!'
-            area.style.backgroundColor ='green'
-        }
-    </script>
+       function sair() {
+           area.innerText = 'saiu!'
+           area.style.backgroundColor ='green'
+       }
+        
+   </script>
 </body>
 </html>
