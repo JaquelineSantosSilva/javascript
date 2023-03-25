@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual  é o seu Pais</title>
+</head>
+<body>
+    <h1>De onde voce é?</h1>
+     <label for="pais">Em qual Pais voce mora?</label>
+     <input type="text" name="pais" id="pais">
+    <input type="submit" value="Pesquisar" onclick="pesquisar()">
+    <input type="reset" value="Limpar">
+    <div id="retorno">
+
+    </div>
+
+    <script>
+        
+        
+        function pesquisar() {
+         var pais = window.document.querySelector('input#pais')   
+         var retorno = window.document.querySelector('div#retorno')
+         var pais = (pais.value)
+         retorno.innerHTML = `<p> Vivendo em  ${pais} !</p>`
+         
+            if (pais == 'Brasil') {
+                retorno.innerHTML += '<p> voce é <strong> Brasileiro </strong> </p>'
+            } else {
+                retorno.innerHTML += '<p> Voce é  <strong> Estrangeiro </strong>'
+            }
+           
+        }
+    </script>
+     
+</body>
+</html>
