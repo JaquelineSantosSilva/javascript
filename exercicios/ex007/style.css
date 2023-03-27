@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-   background-color: rgb(121, 121, 230);
+   background-color: #87dee4;
    font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,6 +17,21 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466) ;
+}
+
+div#msg {
+    text-align: center;
+    padding-bottom: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+img#imagem {
+     border-radius: 50%;
+     width: 250px;
+     height: 250px;
+}
+div#foto {
+    text-align: center;
 }
 
 footer {
