@@ -2,8 +2,8 @@
   var msg = window.document.getElementById('msg')
   var img = window.document.getElementById('imagem')
   var agora = new Date()
-  //var hora = agora.getHours()//
-  var hora = 10
+  var hora = agora.getHours()
+ 
   msg.innerHTML = `Agora são ${hora} horas.`
  function carregar() {
     if (hora >=0 && hora < 12) {
